@@ -23,14 +23,14 @@
 module CLA(
     input [3:0] A,
     input [3:0] B,
-    input Cin,
+    //input Cin,
     output [4:0] S
     );
     
     wire [3:0] P, G, Y;
     wire [4:0] C;
     
-    assign C[0] = Cin;
+    assign C[0] = 0;
     
     xor(P[0], A[0], B[0]);
     xor(P[1], A[1], B[1]);
